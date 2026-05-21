@@ -1,0 +1,1 @@
+D:\LTUD2\PhoneShop\PhoneShop\PhoneShop.csproj;x64
