@@ -1,30 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\LTUD2\\PhoneShop\\PhoneShop\\",
+  "WorkspaceRootPath": "F:\\Learning\\VB2\\KHTN\\M\u00F4n h\u1ECDc\\PhoneShop\\Phone-shop\\Phone-shop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BCCE62C7-8F31-BE81-D62C-C76BACB8147A}|PhoneShop.csproj|d:\\ltud2\\phoneshop\\phoneshop\\viewmodel\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BCCE62C7-8F31-BE81-D62C-C76BACB8147A}|PhoneShop.csproj|solutionrelative:viewmodel\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BCCE62C7-8F31-BE81-D62C-C76BACB8147A}|PhoneShop.csproj|f:\\learning\\vb2\\khtn\\m\u00F4n h\u1ECDc\\phoneshop\\phone-shop\\phone-shop\\view\\orderspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BCCE62C7-8F31-BE81-D62C-C76BACB8147A}|PhoneShop.csproj|solutionrelative:view\\orderspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCCE62C7-8F31-BE81-D62C-C76BACB8147A}|PhoneShop.csproj|d:\\ltud2\\phoneshop\\phoneshop\\view\\productspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{BCCE62C7-8F31-BE81-D62C-C76BACB8147A}|PhoneShop.csproj|solutionrelative:view\\productspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{BCCE62C7-8F31-BE81-D62C-C76BACB8147A}|PhoneShop.csproj|f:\\learning\\vb2\\khtn\\m\u00F4n h\u1ECDc\\phoneshop\\phone-shop\\phone-shop\\model\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCCE62C7-8F31-BE81-D62C-C76BACB8147A}|PhoneShop.csproj|solutionrelative:model\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCCE62C7-8F31-BE81-D62C-C76BACB8147A}|PhoneShop.csproj|d:\\ltud2\\phoneshop\\phoneshop\\view\\productspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BCCE62C7-8F31-BE81-D62C-C76BACB8147A}|PhoneShop.csproj|solutionrelative:view\\productspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BCCE62C7-8F31-BE81-D62C-C76BACB8147A}|PhoneShop.csproj|f:\\learning\\vb2\\khtn\\m\u00F4n h\u1ECDc\\phoneshop\\phone-shop\\phone-shop\\dataaccess\\iorderrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCCE62C7-8F31-BE81-D62C-C76BACB8147A}|PhoneShop.csproj|solutionrelative:dataaccess\\iorderrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCCE62C7-8F31-BE81-D62C-C76BACB8147A}|PhoneShop.csproj|d:\\ltud2\\phoneshop\\phoneshop\\service\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BCCE62C7-8F31-BE81-D62C-C76BACB8147A}|PhoneShop.csproj|solutionrelative:service\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BCCE62C7-8F31-BE81-D62C-C76BACB8147A}|PhoneShop.csproj|d:\\ltud2\\phoneshop\\phoneshop\\dataaccess\\productrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BCCE62C7-8F31-BE81-D62C-C76BACB8147A}|PhoneShop.csproj|solutionrelative:dataaccess\\productrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BCCE62C7-8F31-BE81-D62C-C76BACB8147A}|PhoneShop.csproj|d:\\ltud2\\phoneshop\\phoneshop\\model\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BCCE62C7-8F31-BE81-D62C-C76BACB8147A}|PhoneShop.csproj|solutionrelative:model\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BCCE62C7-8F31-BE81-D62C-C76BACB8147A}|PhoneShop.csproj|f:\\learning\\vb2\\khtn\\m\u00F4n h\u1ECDc\\phoneshop\\phone-shop\\phone-shop\\dataaccess\\orderrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCCE62C7-8F31-BE81-D62C-C76BACB8147A}|PhoneShop.csproj|solutionrelative:dataaccess\\orderrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,84 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Product.cs",
-              "DocumentMoniker": "D:\\LTUD2\\PhoneShop\\PhoneShop\\Model\\Product.cs",
-              "RelativeDocumentMoniker": "Model\\Product.cs",
-              "ToolTip": "D:\\LTUD2\\PhoneShop\\PhoneShop\\Model\\Product.cs",
-              "RelativeToolTip": "Model\\Product.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-27T09:09:52.391Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProductViewModel.cs",
-              "DocumentMoniker": "D:\\LTUD2\\PhoneShop\\PhoneShop\\ViewModel\\ProductViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModel\\ProductViewModel.cs",
-              "ToolTip": "D:\\LTUD2\\PhoneShop\\PhoneShop\\ViewModel\\ProductViewModel.cs",
-              "RelativeToolTip": "ViewModel\\ProductViewModel.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAQwHAAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-26T16:28:51.941Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductsPage.xaml",
-              "DocumentMoniker": "D:\\LTUD2\\PhoneShop\\PhoneShop\\View\\ProductsPage.xaml",
-              "RelativeDocumentMoniker": "View\\ProductsPage.xaml",
-              "ToolTip": "D:\\LTUD2\\PhoneShop\\PhoneShop\\View\\ProductsPage.xaml",
-              "RelativeToolTip": "View\\ProductsPage.xaml",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAE0AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-06-26T16:23:36.219Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProductRepo.cs",
-              "DocumentMoniker": "D:\\LTUD2\\PhoneShop\\PhoneShop\\DataAccess\\ProductRepo.cs",
-              "RelativeDocumentMoniker": "DataAccess\\ProductRepo.cs",
-              "ToolTip": "D:\\LTUD2\\PhoneShop\\PhoneShop\\DataAccess\\ProductRepo.cs",
-              "RelativeToolTip": "DataAccess\\ProductRepo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFcAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-26T09:54:07.674Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "D:\\LTUD2\\PhoneShop\\PhoneShop\\Service\\ProductService.cs",
-              "RelativeDocumentMoniker": "Service\\ProductService.cs",
-              "ToolTip": "D:\\LTUD2\\PhoneShop\\PhoneShop\\Service\\ProductService.cs",
-              "RelativeToolTip": "Service\\ProductService.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAADwvyQAAAA1AAAAAAAAAA==",
+              "Title": "OrderRepo.cs",
+              "DocumentMoniker": "F:\\Learning\\VB2\\KHTN\\M\u00F4n h\u1ECDc\\PhoneShop\\Phone-shop\\Phone-shop\\DataAccess\\OrderRepo.cs",
+              "RelativeDocumentMoniker": "DataAccess\\OrderRepo.cs",
+              "ToolTip": "F:\\Learning\\VB2\\KHTN\\M\u00F4n h\u1ECDc\\PhoneShop\\Phone-shop\\Phone-shop\\DataAccess\\OrderRepo.cs",
+              "RelativeToolTip": "DataAccess\\OrderRepo.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAAA8AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-26T09:00:47.658Z",
+              "WhenOpened": "2026-06-27T15:06:48.817Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ProductsPage.xaml.cs",
-              "DocumentMoniker": "D:\\LTUD2\\PhoneShop\\PhoneShop\\View\\ProductsPage.xaml.cs",
-              "RelativeDocumentMoniker": "View\\ProductsPage.xaml.cs",
-              "ToolTip": "D:\\LTUD2\\PhoneShop\\PhoneShop\\View\\ProductsPage.xaml.cs",
-              "RelativeToolTip": "View\\ProductsPage.xaml.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAiwB4AAAAAAAAAAAAAAA==",
+              "Title": "IOrderRepo.cs",
+              "DocumentMoniker": "F:\\Learning\\VB2\\KHTN\\M\u00F4n h\u1ECDc\\PhoneShop\\Phone-shop\\Phone-shop\\DataAccess\\IOrderRepo.cs",
+              "RelativeDocumentMoniker": "DataAccess\\IOrderRepo.cs",
+              "ToolTip": "F:\\Learning\\VB2\\KHTN\\M\u00F4n h\u1ECDc\\PhoneShop\\Phone-shop\\Phone-shop\\DataAccess\\IOrderRepo.cs",
+              "RelativeToolTip": "DataAccess\\IOrderRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-26T09:02:14.701Z",
+              "WhenOpened": "2026-06-27T15:04:40.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Order.cs",
+              "DocumentMoniker": "F:\\Learning\\VB2\\KHTN\\M\u00F4n h\u1ECDc\\PhoneShop\\Phone-shop\\Phone-shop\\Model\\Order.cs",
+              "RelativeDocumentMoniker": "Model\\Order.cs",
+              "ToolTip": "F:\\Learning\\VB2\\KHTN\\M\u00F4n h\u1ECDc\\PhoneShop\\Phone-shop\\Phone-shop\\Model\\Order.cs",
+              "RelativeToolTip": "Model\\Order.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAcwB8AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-27T14:07:07.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrdersPage.xaml",
+              "DocumentMoniker": "F:\\Learning\\VB2\\KHTN\\M\u00F4n h\u1ECDc\\PhoneShop\\Phone-shop\\Phone-shop\\View\\OrdersPage.xaml",
+              "RelativeDocumentMoniker": "View\\OrdersPage.xaml",
+              "ToolTip": "F:\\Learning\\VB2\\KHTN\\M\u00F4n h\u1ECDc\\PhoneShop\\Phone-shop\\Phone-shop\\View\\OrdersPage.xaml",
+              "RelativeToolTip": "View\\OrdersPage.xaml",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-27T13:12:15.377Z",
               "EditorCaption": ""
             }
           ]

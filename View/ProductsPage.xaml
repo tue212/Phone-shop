@@ -138,9 +138,7 @@
                     <StackPanel Orientation="Horizontal">
                         <Image Source="{x:Bind ViewModel.SelectedProduct.ImagePath, Mode=OneWay}" Width="150" Margin="0,0,20,0"/>
                         <StackPanel Orientation="Vertical" HorizontalAlignment="Left">
-                            <TextBlock>
-                                <Run FontWeight="Bold" Text="Id: "/><Run Text="{x:Bind ViewModel.SelectedProduct.Id, Mode=OneWay}"/>
-                            </TextBlock>
+
                             <TextBlock>
                                 <Run FontWeight="Bold" Text="Tên sản phẩm: "/><Run Text="{x:Bind ViewModel.SelectedProduct.Name, Mode=OneWay}"/>
                             </TextBlock>
@@ -154,8 +152,14 @@
                             <TextBlock>
                                 <Run FontWeight="Bold" Text="Giá nhập: "/><Run Text="{x:Bind ViewModel.SelectedProduct.ImportPrice, Mode=OneWay}"/>
                             </TextBlock>
+                            <TextBlock>
+                                <Run FontWeight="Bold" Text="Mã loại sp: "/><Run Text="{x:Bind ViewModel.SelectedProduct.CatId, Mode=OneWay}"/>
+                            </TextBlock>
+                            <TextBlock>
+                                <Run FontWeight="Bold" Text="Mô tả: "/><Run Text="{x:Bind ViewModel.SelectedProduct.Description, Mode=OneWay}"/>
+                            </TextBlock>
 
-                        </StackPanel>
+                            </StackPanel>
                     </StackPanel>
                 </StackPanel>
             </StackPanel>

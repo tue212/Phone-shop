@@ -11,21 +11,19 @@ namespace PhoneShop.Model
 
     public class Order
     {
-        public string OrderId { get; set; }
-        public DateTime OrderDate { get; set; } = DateTime.Now;
-        public string CustomerName { get; set; }
-        public string CustomerPhone { get; set; }
-        public string CustomerAddress { get; set; }
+        public int OrderId { get; set; }
+        public DateTime CreateTime { get; set; }
+        public decimal FinalPrice { get; set; }
         public OrderStatus Status { get; set; } = OrderStatus.New;
-        public decimal Discount { get; set; }
-        public decimal PaidAmount { get; set; }
-        public string Note { get; set; }
-        public ObservableCollection<OrderItem> Items { get; set; } = new();
-
-        public decimal TotalAmount => Items.Sum(i => i.Quantity * i.UnitPrice);
-        public decimal RemainingAmount => TotalAmount - Discount - PaidAmount;
+        public string StatusText => Status switch
+        {
+            OrderStatus.New => "Mới tạo",
+            OrderStatus.Paid => "Đã thanh toán",
+            OrderStatus.Cancelled => "Đã hủy",
+            _ => "Không xác định"
+        };
     }
-
+    
     public class OrderItem
     {
         public int ProductId { get; set; }

@@ -44,9 +44,9 @@ namespace PhoneShop.DataAccess
                 await conn.OpenAsync();
 
                 var sql = @"
-            SELECT name, import_price, sale_price, count, description, cat_id, image_path
-            FROM product
-            ORDER BY id DESC;";
+                    SELECT name, import_price, sale_price, count, description, cat_id, image_path
+                    FROM products
+                    ORDER BY product_id DESC;";
 
                 await using var cmd = new NpgsqlCommand(sql, conn);
                 await using var reader = await cmd.ExecuteReaderAsync();
@@ -56,12 +56,12 @@ namespace PhoneShop.DataAccess
                     products.Add(new Product
                     {
                         Name = reader.IsDBNull(0) ? string.Empty : reader.GetString(0),
-                        ImportPrice = reader.IsDBNull(7) ? 0m : reader.GetDecimal(7),
-                        SalePrice = reader.IsDBNull(1) ? 0m : reader.GetDecimal(1),
-                        Quantity = reader.IsDBNull(2) ? 0 : reader.GetInt32(2),
-                        Description = reader.IsDBNull(10) ? string.Empty : reader.GetString(10),
-                        CatId = reader.GetInt32(9),
-                        ImagePath = reader.IsDBNull(8) ? string.Empty : reader.GetString(8),
+                        ImportPrice = reader.IsDBNull(1) ? 0m : reader.GetDecimal(1),
+                        SalePrice = reader.IsDBNull(2) ? 0m : reader.GetDecimal(2),
+                        Quantity = reader.IsDBNull(3) ? 0 : reader.GetInt32(3),
+                        Description = reader.IsDBNull(4) ? string.Empty : reader.GetString(4),
+                        CatId = reader.GetInt32(5),
+                        ImagePath = reader.IsDBNull(6) ? string.Empty : reader.GetString(6),
                     });
                 }
 
@@ -95,7 +95,7 @@ namespace PhoneShop.DataAccess
             await conn.OpenAsync();
 
             var sql = @"
-            INSERT INTO product
+            INSERT INTO products
             (name, import_price, sale_price, count, description, cat_id, image_path)
             VALUES
             (@name, @import_price, @sale_price, @quantity, @description, @cat_id, @image_path)
@@ -125,7 +125,7 @@ namespace PhoneShop.DataAccess
             await conn.OpenAsync();
 
             var sql = @"
-            UPDATE product
+            UPDATE products
             SET name = @name,
                 sale_price = @sale_price,
                 count = @quantity,
