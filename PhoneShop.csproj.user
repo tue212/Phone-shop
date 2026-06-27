@@ -5,23 +5,26 @@
     <None Update="App.xaml">
       <SubType>Designer</SubType>
     </None>
-    <Page Update="ReportPage.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="OrdersPage.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="ProductsPage.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="LoginWindow.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <None Update="MainWindow.xaml">
-      <SubType>Designer</SubType>
-    </None>
     <None Update="Package.appxmanifest">
       <SubType>Designer</SubType>
     </None>
+    <Page Update="View\OrdersPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Form\EditProductForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Form\AddProductForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Control\PaginationControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\DashBoardPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\MainPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
 </Project>

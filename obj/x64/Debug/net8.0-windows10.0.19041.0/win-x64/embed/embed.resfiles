@@ -1,6 +1,11 @@
 App.xbf
-LoginWindow.xbf
-MainWindow.xbf
-OrdersPage.xbf
-ProductsPage.xbf
-ReportPage.xbf
+View\Control\PaginationControl.xbf
+View\DashBoardPage.xbf
+View\Form\AddProductForm.xbf
+View\Form\EditProductForm.xbf
+View\LoginWindow.xbf
+View\MainPage.xbf
+View\MainWindow.xbf
+View\OrdersPage.xbf
+View\ProductsPage.xbf
+View\ReportPage.xbf

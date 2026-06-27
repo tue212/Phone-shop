@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UserControl x:ConnectionId='1'
+    x:Class="PhoneShop.View.Control.PaginationControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PhoneShop.View.Control"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Orientation="Vertical" Spacing="6">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="4">
+            <Button x:ConnectionId='3' Content="&lt;&lt;"                        />
+            <Button x:ConnectionId='4' Content="&lt;"                       />
+            <TextBlock x:ConnectionId='5'                                       VerticalAlignment="Center" FontWeight="SemiBold" Margin="10, 0"/>
+            <Button x:ConnectionId='6' Content="&gt;"                       />
+            <Button x:ConnectionId='7' Content="&gt;&gt;"                       />
+        </StackPanel>
+        <TextBlock x:ConnectionId='2'                                        HorizontalAlignment="Center" FontSize="12" Opacity="0.7"/>
+    </StackPanel>
+</UserControl>
+

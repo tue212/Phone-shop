@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page x:ConnectionId='1'
+    Name="container"
+    x:Class="PhoneShop.ProductsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PhoneShop"
+    xmlns:model="using:PhoneShop.Model"
+    xmlns:control="using:PhoneShop.View.Control"
+    xmlns:toolkit="using:CommunityToolkit.WinUI.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <DataTemplate x:ConnectionId='2' x:Name="ListTemplate"                           >
+            <StackPanel x:ConnectionId='9' Orientation="Horizontal">
+                <Image x:ConnectionId='10'                                          Width="25" Height="25" Margin="0,0,5,0"/>
+                <TextBlock>
+                    <Run x:ConnectionId='11' FontWeight="Bold"                                  />---
+                    <Run FontWeight="Bold" Text="Giá bán: "/><Run x:ConnectionId='12'                                       /><Run Text=" VND"/>---
+                    <Run FontWeight="Bold" Text="Tồn kho: "/><Run x:ConnectionId='13'                                      /><Run Text=" sản phẩm"/>
+                </TextBlock>
+            </StackPanel>
+        </DataTemplate>
+        <DataTemplate x:ConnectionId='3' x:Name="ThumbnailTemplate"                           >
+            <Border x:ConnectionId='4' Width="170"
+                    Height="215"
+                    Margin="8"
+                    Background="White"
+                    CornerRadius="16"
+                    BorderThickness="1"
+                    BorderBrush="#E6DED6"
+                    Padding="10">
+                <StackPanel Spacing="10">
+                    
+                    <Image x:ConnectionId='5'                                         
+                               Stretch="UniformToFill"
+                               HorizontalAlignment="Stretch"
+                               VerticalAlignment="Stretch"
+                               Height="80"
+                               Width="80"/>
+          
+                    <TextBlock x:ConnectionId='6'                                  
+                               FontSize="14"
+                               FontWeight="SemiBold"
+                               TextWrapping="Wrap"
+                               MaxLines="2" >
+                    </TextBlock>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+                        <TextBlock>
+                            <Run FontSize="12" Foreground="#8B5E3C" FontWeight="SemiBold" Text="Giá bán: "/><Run x:ConnectionId='8'                                       /><Run Text=" VND"/>
+                        </TextBlock>
+
+                    </StackPanel>
+                    <TextBlock>
+                        <Run FontSize="12" Foreground="#666" FontWeight="SemiBold" Text="Tồn kho: "/><Run x:ConnectionId='7'                                      /><Run Text=" sản phẩm"/>
+                    </TextBlock>
+                </StackPanel>
+            </Border>
+        </DataTemplate>
+    </Page.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <!-- Title -->
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="4">
+            <StackPanel>
+                <TextBlock Text="Products" FontSize="28" FontWeight="SemiBold"/>
+                <TextBlock Text="Manage your phone inventory" FontSize="14" Foreground="#666"/>
+            </StackPanel>
+            <TextBlock x:ConnectionId='31'
+                                                                    
+                Foreground="Red"
+                Margin="0,0,0,12"/>
+
+        </StackPanel>
+        <!-- add, change list view button -->
+        <Border Grid.Row="1" Background="White" CornerRadius="12" Padding="12" Margin="4">
+            <StackPanel Orientation="Horizontal" Spacing="12">
+                <TextBox Width="250" PlaceholderText="Search product..." />
+                <ComboBox Width="180" PlaceholderText="Category"/>
+                <ComboBox Width="150" PlaceholderText="Sort by"/>
+                <Button x:ConnectionId='28' Content="Add Product"
+                    HorizontalAlignment="Right"
+                    Margin="0"
+                    Padding="16,10"
+                    Background="#8B5E3C"
+                    Foreground="White"
+                    CornerRadius="8"
+                    Name="addProductBtn" Width="180"                                                            />
+                <Button x:ConnectionId='29' Content="List" Name="listViewSwitchBtn" Width="80"                                 Margin="0,0,10,0"/>
+                <Button x:ConnectionId='30' Content="Thumbnail" Name="thumbnailViewSwitchBtn" Width="150"                                      Margin="0,0,10,0"/>
+            </StackPanel>
+        </Border>
+        <!-- DS San pham -->
+        
+        <Grid Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="auto"/>
+ 
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="450"/>
+            </Grid.ColumnDefinitions>
+
+            <ListView x:ConnectionId='14' Grid.Row="0" Grid.Column="0"                                                 Name="productListView"                                                                                                                       
+                  ItemTemplate="{StaticResource ListTemplate}">
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <toolkit:WrapPanel/>
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+            <ListView.ContextFlyout>
+                <MenuFlyout>
+                    <MenuFlyoutItem x:ConnectionId='26' Text="Delete"                                                                       />
+                    <MenuFlyoutItem x:ConnectionId='27' Text="Update"                                                                       />
+                </MenuFlyout>
+            </ListView.ContextFlyout>
+        </ListView>
+        <control:PaginationControl x:ConnectionId='15' Grid.Row="1" Grid.Column="0" Margin="10"                                                                                                    />
+
+        <StackPanel Grid.Row="0" Grid.Column="1">
+
+            <!-- Show selected item -->
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Margin="10">
+                <StackPanel x:ConnectionId='18' x:Name="NoSelection" x:Load="False"                                       >
+                    <TextBlock Text="No Selection"/>
+                </StackPanel>
+                <StackPanel x:ConnectionId='19' x:Name="HasSelection" x:Load="False"                                       >
+                    <TextBlock FontSize="18" FontWeight="Bold" Text="Thông tin chi tiết sản phẩm"/>
+                    <StackPanel Orientation="Horizontal">
+                        <Image x:ConnectionId='20'                                                                    Width="150" Margin="0,0,20,0"/>
+                        <StackPanel Orientation="Vertical" HorizontalAlignment="Left">
+                            <TextBlock>
+                                <Run FontWeight="Bold" Text="Id: "/><Run x:ConnectionId='25'                                                          />
+                            </TextBlock>
+                            <TextBlock>
+                                <Run FontWeight="Bold" Text="Tên sản phẩm: "/><Run x:ConnectionId='24'                                                            />
+                            </TextBlock>
+                            <TextBlock>
+                                <Run FontWeight="Bold" Text="Giá bán: "/><Run x:ConnectionId='23'                                                                 /><Run Text=" VND"/>
+                            </TextBlock>
+                            <TextBlock>
+                                <Run FontWeight="Bold" Text="Tồn kho: "/><Run x:ConnectionId='22'                                                                /><Run Text=" sản phẩm"/>
+                            </TextBlock>
+                
+                            <TextBlock>
+                                <Run FontWeight="Bold" Text="Giá nhập: "/><Run x:ConnectionId='21'                                                                   />
+                            </TextBlock>
+
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+
+            <!-- Delete n update button -->
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <Button x:ConnectionId='16' Content="Delete" Name="deleteProductBtn" Width="80" Height="35"                                                                        Margin="0,0,10,0"/>
+                <Button x:ConnectionId='17' Content="Update" Name="updateProductBtn" Width="80" Height="35"                                                                        Margin="0,0,10,0"/>
+            </StackPanel>
+        </StackPanel>
+        </Grid>
+    </Grid>
+</Page>
+

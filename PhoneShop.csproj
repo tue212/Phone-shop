@@ -21,6 +21,12 @@
     <None Remove="OrdersPage.xaml" />
     <None Remove="ProductsPage.xaml" />
     <None Remove="ReportPage.xaml" />
+    <None Remove="View\Control\PaginationControl.xaml" />
+    <None Remove="View\DashBoardPage.xaml" />
+    <None Remove="View\Form\AddProductForm.xaml" />
+    <None Remove="View\Form\EditProductForm.xaml" />
+    <None Remove="View\MainPage.xaml" />
+    <None Remove="View\OrdersPage.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -46,9 +52,22 @@
     <ProjectCapability Include="Msix" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="CommunityToolkit.WinUI.Controls.Primitives" Version="8.2.251219" />
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.28000.1839" />
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="2.0.1" />
+    <PackageReference Include="Npgsql" Version="10.0.3" />
+    <PackageReference Include="PropertyChanged.Fody" Version="4.1.0" />
     <PackageReference Include="System.Security.Cryptography.ProtectedData" Version="10.0.8" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\OrdersPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\Form\EditProductForm.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Page Update="ReportPage.xaml">
@@ -67,6 +86,26 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="LoginWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\DashBoardPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\Control\PaginationControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\Form\AddProductForm.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
